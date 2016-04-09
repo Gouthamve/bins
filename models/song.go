@@ -10,6 +10,6 @@ type Song struct {
 	Year       string `json:"year"`
 	Genre      string `json:"genre"`
 	GenreID    string `json:"genreId"`
-	Size       string `json:"size"`
+	Size       int    `json:"size"`
 	ID3Version string `json:"id3v"`
 }

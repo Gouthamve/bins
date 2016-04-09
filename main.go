@@ -11,6 +11,7 @@ import (
 
 func main() {
 	e := echo.New()
+	e.SetDebug(true)
 
 	// Middleware
 	e.Use(middleware.Logger())
