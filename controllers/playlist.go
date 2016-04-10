@@ -17,6 +17,9 @@ func AddtoPlaylist(c echo.Context) error {
 		return err
 	}
 
+
+
+
 	err := playlists.Insert(p.Song)
 	if err != nil {
 		return err
