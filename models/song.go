@@ -10,6 +10,7 @@ type Song struct {
 	Year       string `json:"year"`
 	Genre      string `json:"genre"`
 	GenreID    string `json:"genreId"`
+	Location   string `json:"location"`
 	Size       int    `json:"size"`
 	ID3Version string `json:"id3v"`
 }

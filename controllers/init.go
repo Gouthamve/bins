@@ -9,6 +9,7 @@ import (
 var session *mgo.Session
 var songs *mgo.Collection
 var users *mgo.Collection
+var playlists *mgo.Collection
 
 func init() {
 	var err error
@@ -18,4 +19,5 @@ func init() {
 	}
 	songs = session.DB("bins").C("songs")
 	users = session.DB("bins").C("users")
+	playlists = session.DB("bins").C("playlists")
 }

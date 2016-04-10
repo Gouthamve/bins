@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-	 
+
 
 	"github.com/gouthamve/bins/controllers"
 	"github.com/labstack/echo"
@@ -24,6 +24,7 @@ func main() {
 	})
 
 	e.Get("/api/songs", controllers.GetSongs)
+	e.Get("/api/:artist/:album/song", controllers.GetSongs)
 	e.Post("/api/songs", controllers.CreateSong)
 	e.Post("/api/user/add", controllers.CreateUser)
 	// Start server
