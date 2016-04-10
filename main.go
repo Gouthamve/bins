@@ -26,7 +26,7 @@ func main() {
 	e.Get("/api/songs", controllers.GetSongs)
 	e.Get("/api/:artist/:album/song", controllers.GetSongs)
 	e.Post("/api/songs", controllers.CreateSong)
-	e.Post("/api/playlist/:playlist/add", controllers.AddtoPlaylist)
+	e.Post("/api/playlist/add", controllers.AddtoPlaylist)
 	e.Post("/api/user/add", controllers.CreateUser)
 	// Start server
 	e.Run(standard.New(":1323"))

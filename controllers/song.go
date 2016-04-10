@@ -51,7 +51,7 @@ func CreateSong(c echo.Context) error {
 							newS.Artist = strings.Trim(f.Artist(), "\x00")
 							newS.Album = strings.Trim(f.Album(), "\x00")
 							newS.Year = f.Year()
-							newS.Genre = f.Genre()
+							newS.Genre = strings.Trim(f.Genre(), "\x00")
 							newS.Size = f.Size()
 							newS.ID3Version = f.Version()
 							dirpath := "Music/"+newS.Artist + "/" + newS.Album
